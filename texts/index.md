@@ -5,14 +5,13 @@ description: Process Critical Styles and PostCSS for fast renderings.
 
 # Speed up webpage rendering with critical CSS – a realistic approach
 
-To get the best user experience on Websites  is crucial. While on broadband the performance and optimization of a  
+One thing to keep user satisfaction on a website high is to serve a snappy experience. While on broadband the time to load a website is usually not crucial. But on mobile, the user might be in a 3G (mobile) situation and they are waiting for the website to get slowly loaded.
 
-
-The first meaningful paint of a Website in our browsers is crucial for the user experience. While developers often work on a broadband desktop computer, the final user might be in a 3G mobile situation and is waiting for the website to get slowly loaded
+A fast meaningful first paint in the browser helps to bound the users attention to the content. While developers and designers often focus on a complete and satisfaying paint, users are more ofthen just eager to start to consume the content. What can we do to help?
 
 
 ## Traditional blockin CSS loading
-External style sheets in the `<head />` of a website prevent the browser from start rendering until these files are loaded and interpretet. While [Render Blocking CSS](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css) is loading a white viewport is visible and the user has no other option than to wait. Once the CSS is loaded the CSSOM (CSS Object Model) and DOM (Document Object Model) are finaly interpretet the website gets laid out and rendered.
+External style sheets in the `<head />` of a website prevent the browser from start rendering until these files are loaded and interpretet. While [Render Blocking CSS](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css) is loading a white viewport is visible and the user has no other option than to wait. Once the CSS is loaded the CSSOM (CSS Object Model) and DOM (Document Object Model) are finally interpretet the website gets laid out and rendered.
 
 
 ```html
